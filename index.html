@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="main.js" defer></script>
+  <title>Table</title>
+</head>
+
+<body>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div id="particles"></div>
+  <div id="filter-box">
+    <div>
+      <b>Search the table for id, name, attendance, points:</b>
+      <input id="filter" type="text" placeholder="Search here">
+    </div>
+    <div>
+      <b>Limit the number of rows:</b>
+      <input id="row-limit" type="number" min="1" placeholder="Enter row limit">
+    </div>
+  </div>
+
+  <div class="table">
+    <table id="stats">
+      <tr>
+        <th class="id" onclick="sortTable(0)">ID</th>
+        <th onclick="sortTable(1)">Name</th>
+        <th onclick="sortTable(2)">Attendance</th>
+        <th onclick="sortTable(3)">Points</th>
+      </tr>
+      <tbody id="apiData"></tbody>
+      <!-- Add more rows as needed -->
+    </table>
+  </div>
+
+
+</body>
+
+</html>

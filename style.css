@@ -1,0 +1,86 @@
+body {
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 2rem;
+  height: 100vh;
+  margin: 0;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5% 0;
+}
+
+input {
+  width: 100%;
+  padding: 1%;
+  padding: 7px;
+  border-radius: 10px;
+  background: #fbfbfb;
+  border: 1px solid #ccc;
+  height: 36px;
+  font-size: 30px;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid #000;
+  border-radius: 4px;
+  transition: all 3000ms cubic-bezier(.23, 1, 0.32, 1);
+}
+
+table {
+  width: 80%;
+  z-index: 1;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+#stats th:first-child,
+#stats td:first-child {
+  display: none;
+}
+
+
+#particles {
+  position: fixed;
+  top: 0; /* Position it at the top of the viewport */
+  left: 0; /* Position it at the left of the viewport */
+  height: 100%; /* Make it span the entire viewport height */
+  width: 100%; /* Make it span the entire viewport width */
+  z-index: 0;
+  margin: 0;
+}
+
+#filter-box {
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+#row-limit {
+  height: 60px;
+}
+
+
+
+.circle {
+  margin: 0;
+  height: 24px;
+  width: 24px;
+  border-radius: 24px;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 99999999; /* so that it stays on top of all other elements */
+}
